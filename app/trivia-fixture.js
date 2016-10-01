@@ -1,211 +1,211 @@
 module.exports = [
   {
-    "question": "Daniel Radcliffe became a global star in the film industry due to his performance in which film franchise?",
+    "text": "Daniel Radcliffe became a global star in the film industry due to his performance in which film franchise?",
     "answers": [
       {
-        "status": "incorrect",
-        "answer": "Ted"
+        "correct": false,
+        "text": "Ted"
       },
       {
-        "status": "correct",
-        "answer": "Harry Potter"
+        "correct": true,
+        "text": "Harry Potter"
       },
       {
-        "status": "incorrect",
-        "answer": "Spy Kids"
+        "correct": false,
+        "text": "Spy Kids"
       },
       {
-        "status": "incorrect",
-        "answer": "Pirates of the Caribbean"
+        "correct": false,
+        "text": "Pirates of the Caribbean"
       }
     ]
   },
   {
-    "question": "When was the movie \"Con Air\" released?",
+    "text": "When was the movie \"Con Air\" released?",
     "answers": [
       {
-        "status": "correct",
-        "answer": "1997"
+        "correct": true,
+        "text": "1997"
       },
       {
-        "status": "incorrect",
-        "answer": "1985"
+        "correct": false,
+        "text": "1985"
       },
       {
-        "status": "incorrect",
-        "answer": "1999"
+        "correct": false,
+        "text": "1999"
       },
       {
-        "status": "incorrect",
-        "answer": "1990"
+        "correct": false,
+        "text": "1990"
       }
     ]
   },
   {
-    "question": "Who played Deputy Marshal Samuel Gerard in the 1993 film \"The Fugitive\"?",
+    "text": "Who played Deputy Marshal Samuel Gerard in the 1993 film \"The Fugitive\"?",
     "answers": [
       {
-        "status": "incorrect",
-        "answer": "Harrison Ford"
+        "correct": false,
+        "text": "Harrison Ford"
       },
       {
-        "status": "incorrect",
-        "answer": "Harvey Keitel"
+        "correct": false,
+        "text": "Harvey Keitel"
       },
       {
-        "status": "incorrect",
-        "answer": "Martin Landau"
+        "correct": false,
+        "text": "Martin Landau"
       },
       {
-        "status": "correct",
-        "answer": "Tommy Lee Jones"
+        "correct": true,
+        "text": "Tommy Lee Jones"
       }
     ]
   },
   {
-    "question": "Who starred in the film 1973 movie \"Enter The Dragon\"?",
+    "text": "Who starred in the film 1973 movie \"Enter The Dragon\"?",
     "answers": [
       {
-        "status": "incorrect",
-        "answer": "Yun-Fat Chow"
+        "correct": false,
+        "text": "Yun-Fat Chow"
       },
       {
-        "status": "correct",
-        "answer": "Bruce Lee"
+        "correct": true,
+        "text": "Bruce Lee"
       },
       {
-        "status": "incorrect",
-        "answer": "Jackie Chan"
+        "correct": false,
+        "text": "Jackie Chan"
       },
       {
-        "status": "incorrect",
-        "answer": "Jet Li"
+        "correct": false,
+        "text": "Jet Li"
       }
     ]
   },
   {
-    "question": "What was the title of the first Bond movie, released in 1962?",
+    "text": "What was the title of the first Bond movie, released in 1962?",
     "answers": [
       {
-        "status": "incorrect",
-        "answer": "Goldfinger"
+        "correct": false,
+        "text": "Goldfinger"
       },
       {
-        "status": "incorrect",
-        "answer": "From Russia with Love"
+        "correct": false,
+        "text": "From Russia with Love"
       },
       {
-        "status": "correct",
-        "answer": "Dr. No"
+        "correct": true,
+        "text": "Dr. No"
       },
       {
-        "status": "incorrect",
-        "answer": "Thunderball"
+        "correct": false,
+        "text": "Thunderball"
       }
     ]
   },
   {
-    "question": "This movie contains the quote, \"Houston, we have a problem.\"",
+    "text": "This movie contains the quote, \"Houston, we have a problem.\"",
     "answers": [
       {
-        "status": "incorrect",
-        "answer": "Marooned"
+        "correct": false,
+        "text": "Marooned"
       },
       {
-        "status": "incorrect",
-        "answer": "The Right Stuff"
+        "correct": false,
+        "text": "The Right Stuff"
       },
       {
-        "status": "incorrect",
-        "answer": "Capricorn One"
+        "correct": false,
+        "text": "Capricorn One"
       },
       {
-        "status": "correct",
-        "answer": "Apollo 13"
+        "correct": true,
+        "text": "Apollo 13"
       }
     ]
   },
   {
-    "question": "This movie contains the quote, \"I feel the need ... the need for speed!\"",
+    "text": "This movie contains the quote, \"I feel the need ... the need for speed!\"",
     "answers": [
       {
-        "status": "incorrect",
-        "answer": "The Color of Money"
+        "correct": false,
+        "text": "The Color of Money"
       },
       {
-        "status": "correct",
-        "answer": "Top Gun"
+        "correct": true,
+        "text": "Top Gun"
       },
       {
-        "status": "incorrect",
-        "answer": "Days of Thunder"
+        "correct": false,
+        "text": "Days of Thunder"
       },
       {
-        "status": "incorrect",
-        "answer": "Cocktail"
+        "correct": false,
+        "text": "Cocktail"
       }
     ]
   },
   {
-    "question": "This movie contains the quote, \"Nobody puts Baby in a corner.\"",
+    "text": "This movie contains the quote, \"Nobody puts Baby in a corner.\"",
     "answers": [
       {
-        "status": "correct",
-        "answer": "Dirty Dancing"
+        "correct": true,
+        "text": "Dirty Dancing"
       },
       {
-        "status": "incorrect",
-        "answer": "Three Men and a Baby"
+        "correct": false,
+        "text": "Three Men and a Baby"
       },
       {
-        "status": "incorrect",
-        "answer": "Ferris Bueller's Day Off"
+        "correct": false,
+        "text": "Ferris Bueller's Day Off"
       },
       {
-        "status": "incorrect",
-        "answer": "Pretty in Pink"
+        "correct": false,
+        "text": "Pretty in Pink"
       }
     ]
   },
   {
-    "question": "What is the orange and white bot's name in \"Star Wars: The Force Awakens\"?",
+    "text": "What is the orange and white bot's name in \"Star Wars: The Force Awakens\"?",
     "answers": [
       {
-        "status": "incorrect",
-        "answer": "BB-3"
+        "correct": false,
+        "text": "BB-3"
       },
       {
-        "status": "incorrect",
-        "answer": "AA-A"
+        "correct": false,
+        "text": "AA-A"
       },
       {
-        "status": "correct",
-        "answer": "BB-8"
+        "correct": true,
+        "text": "BB-8"
       },
       {
-        "status": "incorrect",
-        "answer": "R2-D2"
+        "correct": false,
+        "text": "R2-D2"
       }
     ]
   },
   {
-    "question": "Which of these movies did Jeff Bridges not star in?",
+    "text": "Which of these movies did Jeff Bridges not star in?",
     "answers": [
       {
-        "status": "incorrect",
-        "answer": "True Grit"
+        "correct": false,
+        "text": "True Grit"
       },
       {
-        "status": "incorrect",
-        "answer": "The Giver"
+        "correct": false,
+        "text": "The Giver"
       },
       {
-        "status": "incorrect",
-        "answer": "Tron: Legacy"
+        "correct": false,
+        "text": "Tron: Legacy"
       },
       {
-        "status": "correct",
-        "answer": "The Hateful Eight"
+        "correct": true,
+        "text": "The Hateful Eight"
       }
     ]
   }
