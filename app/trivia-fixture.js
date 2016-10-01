@@ -21,7 +21,7 @@ module.exports = [
     ]
   },
   {
-    "question": "When was the movie &#039;Con Air&#039; released?",
+    "question": "When was the movie \"Con Air\" released?",
     "answers": [
       {
         "status": "correct",
@@ -42,7 +42,7 @@ module.exports = [
     ]
   },
   {
-    "question": "Who played Deputy Marshal Samuel Gerard in the 1993 film &quot;The Fugitive&quot;?",
+    "question": "Who played Deputy Marshal Samuel Gerard in the 1993 film \"The Fugitive\"?",
     "answers": [
       {
         "status": "incorrect",
@@ -63,7 +63,7 @@ module.exports = [
     ]
   },
   {
-    "question": "Who starred in the film 1973 movie &quot;Enter The Dragon&quot;?",
+    "question": "Who starred in the film 1973 movie \"Enter The Dragon\"?",
     "answers": [
       {
         "status": "incorrect",
@@ -105,7 +105,7 @@ module.exports = [
     ]
   },
   {
-    "question": "This movie contains the quote, &quot;Houston, we have a problem.&quot;",
+    "question": "This movie contains the quote, \"Houston, we have a problem.\"",
     "answers": [
       {
         "status": "incorrect",
@@ -126,7 +126,7 @@ module.exports = [
     ]
   },
   {
-    "question": "This movie contains the quote, &quot;I feel the need ... the need for speed!&quot;",
+    "question": "This movie contains the quote, \"I feel the need ... the need for speed!\"",
     "answers": [
       {
         "status": "incorrect",
@@ -147,7 +147,7 @@ module.exports = [
     ]
   },
   {
-    "question": "This movie contains the quote, &quot;Nobody puts Baby in a corner.&quot;",
+    "question": "This movie contains the quote, \"Nobody puts Baby in a corner.\"",
     "answers": [
       {
         "status": "correct",
@@ -159,7 +159,7 @@ module.exports = [
       },
       {
         "status": "incorrect",
-        "answer": "Ferris Bueller&#039;s Day Off"
+        "answer": "Ferris Bueller's Day Off"
       },
       {
         "status": "incorrect",
@@ -168,7 +168,7 @@ module.exports = [
     ]
   },
   {
-    "question": "What is the orange and white bot&#039;s name in &quot;Star Wars: The Force Awakens&quot;?",
+    "question": "What is the orange and white bot's name in \"Star Wars: The Force Awakens\"?",
     "answers": [
       {
         "status": "incorrect",
