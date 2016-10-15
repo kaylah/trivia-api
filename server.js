@@ -4,6 +4,7 @@ var bodyParser = require('body-parser');
 var cors = require('cors');
 
 var sampleTrivia = require('./app/trivia-fixture.js');
+var trivia = require('./app/trivia.js');
 
 //var mongoose   = require('mongoose');
 //mongoose.connect('mongodb://node:node@novus.modulusmongo.net:27017/Iganiq8o');
@@ -24,9 +25,34 @@ router.get('/', function(req, res) {
 router.route('/sample')
 
   .get(function(req, res) {
-      
-    res.json(sampleTrivia);  
-      
+    res.json(sampleTrivia);
+/*    triviaQA = trivia.getQuiz();
+    console.log('triviaQA', triviaQA);
+    triviaQA.then(function(result){res.json(result);});*/
+  });
+
+router.route('/category/:category')
+
+  .get(function(req, res) {
+    //res.json(sampleTrivia);
+    trivia.getQuiz(req.params)
+      .then(function(result){res.json(result);});
+  });
+
+router.route('/category/:category/difficulty/:difficulty')
+
+  .get(function(req, res) {
+    //res.json(sampleTrivia);
+    trivia.getQuiz(req.params)
+      .then(function(result){res.json(result);});
+  });
+
+router.route('/category/:category/difficulty/:difficulty/count/:count')
+
+  .get(function(req, res) {
+    //res.json(sampleTrivia);
+    trivia.getQuiz(req.params)
+      .then(function(result){res.json(result);});
   });
 
 app.use('/api', router);
