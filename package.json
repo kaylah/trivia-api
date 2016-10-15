@@ -23,5 +23,9 @@
     "lodash": "^4.16.4",
     "mongoose": "^4.6.2",
     "node-fetch": "^1.6.3"
+  },
+  "engines": {
+    "node": "6.6.x",
+    "npm": "3.10.x"
   }
 }
