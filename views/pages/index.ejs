@@ -1,0 +1,98 @@
+<!-- views/pages/index.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <% include ../partials/head %>
+</head>
+<body class="container">
+
+  <main>
+    <div class="jumbotron">
+      <h1>Coding &amp; Cocktails Trivia API</h1>
+      <p>The Trivia API provides multiple-choice questions and answers for the Cocktail Trivia App. Multiple categories are available and there are optional parameters for choice of difficulty and number of questions.</p>
+      <p>Use the form below to choose the options for your quiz questions, and you will be provided with the relevant API URL.</p>
+
+      <form>
+        <div class="form-group">
+          <label for="category">Category</label>
+          <select class="form-control" id="category">
+            <option value="general-knowledge">General Knowledge</option>
+            <option value="entertainment-books">Books</option>
+            <option value="entertainment-film">Film</option>
+            <option value="entertainment-music">Music</option>
+            <option value="entertainment-musicals-theatres">Musicals &amp; Theatres</option>
+            <option value="entertainment-tv">TV</option>
+            <option value="entertainment-video-games">Video Games</option>
+            <option value="entertainment-board-games">Board Games</option>
+            <option value="science-nature">Science &amp; Nature</option>
+            <option value="science-computers">Computers</option>
+            <option value="science-mathematics">Mathematics</option>
+            <option value="mythology">Mythology</option>
+            <option value="sports">Sports</option>
+            <option value="geography">Geography</option>
+            <option value="history">History</option>
+            <option value="politics">Politics</option>
+            <option value="art">Art</option>
+            <option value="celebrities">Celebrities</option>
+            <option value="animals">Animals</option>
+            <option value="vehicles">Vehicles</option>
+            <option value="entertainment-comics">Comics</option>
+            <option value="science-gadgets">Gadgets</option>
+            <option value="entertainment-japanese-anime-manga">Japanese Anime &amp; Magna</option>
+            <option value="entertainment-cartoon-animations">Cartoon &amp; Animations</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="difficulty">Difficulty (Optional)</label>
+          <select class="form-control" id="difficulty">
+            <option>Any</option>
+            <option>Easy</option>
+            <option>Medium</option>
+            <option>Hard</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="count">Number of Questions (Optional)</label>
+          <input type="number" class="form-control" id="count" placeholder="10"/>
+        </div>
+        <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+      </form>
+
+      <div id="generated-api"></div>
+    </div>
+  </main>
+
+  <script>
+    window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+    ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+  <script type="text/javascript">
+    var getCount = function ( count ) {
+      if ( !count || parseInt( count ) <= 0 ) return '';
+      return '/count/' + count;
+    };
+
+    var getDifficulty = function ( difficulty ) {
+      if (!difficulty || difficulty === 'any') return '';
+      return '/difficulty/' + difficulty
+    }
+
+    var processForm = function() {
+      var categoryInput = document.getElementById('category');
+      var selectedCategory = categoryInput.options[categoryInput.selectedIndex].value;
+      var difficultyInput = document.getElementById('difficulty');
+      var selectedDifficulty = difficultyInput.options[difficultyInput.selectedIndex].value.toLowerCase();
+      var countInput = document.getElementById('count');
+      var questionCount = countInput.value;
+      var generatedApi = '//cocktail-trivia-api.herokuapp.com/api/category/' + selectedCategory + getDifficulty( selectedDifficulty ) + getCount( questionCount );
+      var generatedApiContainer = document.getElementById('generated-api');
+      generatedApiContainer.innerHTML = generatedApi;
+      generatedApiContainer.className += ' show';
+    };
+    var submitApiFormBtn = document.getElementById('submit');
+    submitApiFormBtn.onclick = function() { processForm(); return false; }
+  </script>
+</body>
+</html>

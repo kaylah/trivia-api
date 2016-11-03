@@ -9,6 +9,9 @@ var trivia = require('./app/trivia.js');
 //var mongoose   = require('mongoose');
 //mongoose.connect('mongodb://node:node@novus.modulusmongo.net:27017/Iganiq8o');
 
+// set the view engine to ejs
+app.set('view engine', 'ejs');
+
 app.use(cors());
 
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -16,13 +19,19 @@ app.use(bodyParser.json());
 
 var port = process.env.PORT || 8080;
 
-var router = express.Router(); 
+var viewRouter = express.Router(); 
+var apiRouter = express.Router(); 
 
-router.get('/', function(req, res) {
-  res.json({ message: 'hooray! welcome to our api!' });   
+//router.get('/', function(req, res) {
+//  res.json({ message: 'hooray! welcome to our api!' });   
+//});
+
+// index page 
+viewRouter.get('/', function(req, res) {
+    res.render('pages/index');
 });
 
-router.route('/sample')
+apiRouter.route('/sample')
 
   .get(function(req, res) {
     res.json(sampleTrivia);
@@ -31,7 +40,7 @@ router.route('/sample')
     triviaQA.then(function(result){res.json(result);});*/
   });
 
-router.route('/category/:category')
+apiRouter.route('/category/:category')
 
   .get(function(req, res) {
     //res.json(sampleTrivia);
@@ -39,7 +48,7 @@ router.route('/category/:category')
       .then(function(result){res.json(result);});
   });
 
-router.route('/category/:category/difficulty/:difficulty')
+apiRouter.route('/category/:category/difficulty/:difficulty')
 
   .get(function(req, res) {
     //res.json(sampleTrivia);
@@ -47,7 +56,7 @@ router.route('/category/:category/difficulty/:difficulty')
       .then(function(result){res.json(result);});
   });
 
-router.route('/category/:category/difficulty/:difficulty/count/:count')
+apiRouter.route('/category/:category/difficulty/:difficulty/count/:count')
 
   .get(function(req, res) {
     //res.json(sampleTrivia);
@@ -55,7 +64,8 @@ router.route('/category/:category/difficulty/:difficulty/count/:count')
       .then(function(result){res.json(result);});
   });
 
-app.use('/api', router);
+app.use('/', viewRouter);
+app.use('/api', apiRouter);
 
 app.listen(port);
 console.log('Magic happens on port ' + port);
